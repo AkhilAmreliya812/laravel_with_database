@@ -15,9 +15,9 @@ class WorkerSeeder extends Seeder
     {
 
        DB::table('workers')->insert([
-        'name' => 'Anjali Raichura',
-        'email' => 'anjali@gmail.com',
-        'city' => 'vejalpur 2'
-       ]);
+        ['name' => 'Akhil Amreliya','email' => 'akhil@gmail.com','city' => 'Ahmedabad'],
+        ['name' => 'Harsh Patel','email' => 'harsh@gmail.com','city' => 'Vejalpur'],
+        ['name' => 'Bhupat Vatukiya','email' => 'bhupat@gmail.com','city' => 'Bavla']
+    ]);
     }
 }
