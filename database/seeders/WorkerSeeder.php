@@ -14,12 +14,10 @@ class WorkerSeeder extends Seeder
     public function run(): void
     {
 
-        $workers = [
-            ['name' => 'Akhil Amreliya','email' => 'akhil@gmail.com','city' => 'Ahmedabad'],
-            ['name' => 'Harsh Patel','email' => 'harsh@gmail.com','city' => 'Vejalpur'],
-            ['name' => 'Bhupat Vatukiya','email' => 'bhupat@gmail.com','city' => 'Bavla']
-        ];
-
-       DB::table('workers')->insert($workers);
+       DB::table('workers')->insert([
+        ['name' => 'Akhil Amreliya','email' => 'akhil@gmail.com','city' => 'Ahmedabad'],
+        ['name' => 'Harsh Patel','email' => 'harsh@gmail.com','city' => 'Vejalpur'],
+        ['name' => 'Bhupat Vatukiya','email' => 'bhupat@gmail.com','city' => 'Bavla']
+    ]);
     }
 }
